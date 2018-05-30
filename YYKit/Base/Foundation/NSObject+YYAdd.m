@@ -13,6 +13,7 @@
 #import "YYKitMacro.h"
 #import <objc/objc.h>
 #import <objc/runtime.h>
+#import <UIKit/UIKit.h>
 
 YYSYNTH_DUMMY_CLASS(NSObject_YYAdd)
 

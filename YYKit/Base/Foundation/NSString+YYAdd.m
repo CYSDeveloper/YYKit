@@ -198,6 +198,7 @@ YYSYNTH_DUMMY_CLASS(NSString_YYAdd)
     return result;
 }
 
+#if TARGET_OS_IOS
 - (CGSize)sizeForFont:(UIFont *)font size:(CGSize)size mode:(NSLineBreakMode)lineBreakMode {
     CGSize result;
     if (!font) font = [UIFont systemFontOfSize:12];
@@ -231,6 +232,7 @@ YYSYNTH_DUMMY_CLASS(NSString_YYAdd)
     CGSize size = [self sizeForFont:font size:CGSizeMake(width, HUGE) mode:NSLineBreakByWordWrapping];
     return size.height;
 }
+#endif
 
 - (BOOL)matchesRegex:(NSString *)regex options:(NSRegularExpressionOptions)options {
     NSRegularExpression *pattern = [NSRegularExpression regularExpressionWithPattern:regex options:options error:NULL];

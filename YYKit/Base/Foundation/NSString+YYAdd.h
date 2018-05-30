@@ -139,6 +139,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (NSString *)stringByEscapingHTML;
 
+#if TARGET_OS_IOS
 #pragma mark - Drawing
 ///=============================================================================
 /// @name Drawing
@@ -183,7 +184,7 @@ NS_ASSUME_NONNULL_BEGIN
  may be rounded up to the nearest whole number.
  */
 - (CGFloat)heightForFont:(UIFont *)font width:(CGFloat)width;
-
+#endif
 
 #pragma mark - Regular Expression
 ///=============================================================================
